@@ -8,13 +8,11 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *node;
-	listint_t *ptr;
+	listint_t *node, *ptr;
 
 	if (list == NULL || list->next == NULL)
 		return (0);
-	node = list;
-	ptr = list;
+	node =  list; ptr = list;
 
 	while (ptr != NULL && node != NULL && ptr->next != NULL)
 	{
