@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for a in range(97, 123):
-    if a != 101 | a != 113:
-        print("{}".format(chr(a)), end='')
+for alp in range(97, 123):
+    if alp in [101, 113]:
+        continue
+    print("{}".format(chr(alp)), end='')
