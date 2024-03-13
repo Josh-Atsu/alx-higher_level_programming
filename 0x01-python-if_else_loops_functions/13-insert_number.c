@@ -9,11 +9,10 @@
  */
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *ptr;
-	listint_t *node;
+	listint_t *ptr, *node;
 	int x = 0;
 
-	if (head == NULL)
+	if (head == NULL || *head == NULL)
 		return (NULL);
 	ptr = *head;
 	while (ptr->next != NULL)
