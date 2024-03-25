@@ -3,20 +3,14 @@ def roman_to_int(roman_string):
     test_string = roman_string.find("")
     if test_string < 0:
         return 0
+    roman = dict(I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000)
     sum_x = 0
-    for i in roman_string:
-        if i == 'M':
-            sum_x += 1000
-        elif i == 'D':
-            sum_x += 500
-        elif i == 'C':
-            sum_x += 100
-        elif i == 'L':
-            sum_x += 50
-        elif i == 'X':
-            sum_x += 10
-        elif i == 'V':
-            sum_x += 5
-        elif i == 'I':
-            sum_x += 1
+    for i, letter in enumerate(roman_string):
+        num = roman[letter]
+        try:
+            if num < roman[roman_string[i + 1]]:
+                num = num * -1
+        except IndexError:
+            pass
+        sum_x = sum_x + num
     return sum_x
