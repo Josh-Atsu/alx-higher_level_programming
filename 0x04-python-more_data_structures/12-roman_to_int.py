@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    test_string = roman_string.find("")
-    if test_string < 0:
+    if type(roman_string) is not str or roman_string is None:
         return 0
-    roman = dict(I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000)
+    roman = dict(I=1, V=5, X=10, L=50, C=100, D=500, M=1000)
     sum_x = 0
     for i, letter in enumerate(roman_string):
         num = roman[letter]
