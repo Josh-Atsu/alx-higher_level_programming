@@ -44,15 +44,13 @@ class Square:
     """
     @size.setter
     def size(self, value):
-        try:
-            value_s = int(value)
-        except:
-            print("size must be an integer")
-            return None
-        if value_s < 0:
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+            return
+        if value < 0:
             raise ValueError("size must be >= 0")
             return
-        self.__size = value_s
+        self.__size = value
     """
     python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
     """
