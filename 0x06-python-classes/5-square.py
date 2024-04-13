@@ -46,4 +46,3 @@ class Square:
                     print("#", end="")
                 print()
     """This the code for creating my _print"""
-
