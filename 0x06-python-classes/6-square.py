@@ -10,7 +10,7 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         if position is not tuple(position):
-            raise TypeError("position mustbe a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__size = size
         self.__position = position
     """Private instances for both size and position"""
@@ -37,7 +37,7 @@ class Square:
     @position.setter
     def position(self, value):
         if not isinstance(value, tuple):
-            raise TypeError("position must be a tuple with 2 psitive integers")
+            raise TypeError("position must be a tuple of 2 psitive integers")
         self.__position = value
     """The getter and setter for position with exception"""
 
