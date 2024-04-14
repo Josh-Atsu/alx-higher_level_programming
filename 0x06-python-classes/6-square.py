@@ -36,7 +36,11 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if not isinstance(value, tuple):
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                value[0] < 0 or value[1] < 0 or
+                not isinstance(value[0], int) or
+                not isinstance(value[1], int)):
             raise TypeError("position must be a tuple of 2 psitive integers")
         self.__position = value
     """The getter and setter for position with exception"""
@@ -53,6 +57,8 @@ class Square:
             print()
         else:
             for i in range(0, n):
+                for y in range(0, self.__position[1]):
+                    print("", end="")
                 for y in range(0, self.__position[0]):
                     print(" ", end="")
                 for x in range(0, n):
