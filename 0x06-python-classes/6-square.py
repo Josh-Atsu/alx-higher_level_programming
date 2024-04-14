@@ -41,7 +41,7 @@ class Square:
                 value[0] < 0 or value[1] < 0 or
                 not isinstance(value[0], int) or
                 not isinstance(value[1], int)):
-            raise TypeError("position must be a tuple of 2 psitive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
     """The getter and setter for position with exception"""
 
@@ -57,7 +57,7 @@ class Square:
             print()
         else:
             for z in range(0, self.__position[1]):
-                    print("", end="")
+                print("")
             for i in range(0, n):
                 for y in range(0, self.__position[0]):
                     print(" ", end="")
