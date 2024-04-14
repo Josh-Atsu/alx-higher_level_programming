@@ -57,7 +57,7 @@ class Square:
             print()
         else:
             for i in range(0, n):
-                for y in range(0, self.__position[1]):
+                for z in range(0, self.__position[1]):
                     print("", end="")
                 for y in range(0, self.__position[0]):
                     print(" ", end="")
