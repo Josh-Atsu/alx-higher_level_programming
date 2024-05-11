@@ -16,6 +16,6 @@ if len_arg != 2:
 if not sys.argv[1].isdigit:
     print("N must be a number")
     exit(1)
-if int(sys.argv[1]) < 4:
+if sys.argv[1].isdigit < 4:
     print("N must be at least 4")
     exit(1)
