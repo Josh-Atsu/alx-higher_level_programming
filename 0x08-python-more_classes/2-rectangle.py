@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Adding public methods area and perimeter
-""" 
+"""
 The class Rectangle with getters and setters
 and methods area and perimeter
 """
