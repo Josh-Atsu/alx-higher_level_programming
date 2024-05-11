@@ -13,11 +13,10 @@ if len_arg != 2:
     print("Usage: nqueens N")
     sys.exit(1)
 
-if sys.argv[1].isdigit is False:
+if int(sys.argv[1]) is False:
     print("N must be a number")
     sys.exit(1)
 
-num = sys.argv[1].isdigit
-if num < 4:
+if int(sys.argv[1]) < 4:
     print("N must be at least 4")
     sys.exit(1)
