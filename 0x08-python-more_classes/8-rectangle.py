@@ -1,4 +1,4 @@
-#!/usr/biin/python3
+#!/usr/bin/python3
 # Adding a static method
 """The class Rectangle with staticmethod the compares two instances"""
 
