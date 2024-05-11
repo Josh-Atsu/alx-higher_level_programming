@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#initialization adding getters and setters
+# initialization adding getters and setters
 """ The class Rectangle with getters and setters """
 
 
