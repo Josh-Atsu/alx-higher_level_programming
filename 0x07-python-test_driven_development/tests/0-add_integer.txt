@@ -10,6 +10,8 @@ Test Success:
 	-4
 	>>> add_integer(1)
 	99
+	>>> add_integer(1.4, 5)
+	6
 
 
 Test Failures:
@@ -20,10 +22,11 @@ Empty argumemt
 	TypeError: add_integer() missing 1 required positional argument: 'a'
 
 Different arguments
->>> add_integer("busy", 0)
-Error
-...
-TypeError: must be an integer
+	>>> add_integer("busy", 0)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
 
 if __name__ == "__main__":
     import doctest
