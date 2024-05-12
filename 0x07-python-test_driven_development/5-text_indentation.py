@@ -12,10 +12,10 @@ def text_indentation(text):
             print(w, end="")
             print()
             print()
-        elif text[idx] == " "\
+        elif (text[idx] == " "
                 and (text[idx - 1] == "."
                 or text[idx - 1] == "?"
-                or text[idx - 1] == ":"):
+                or text[idx - 1] == ":")):
             pass
         else:
             print(text[idx], end="")
