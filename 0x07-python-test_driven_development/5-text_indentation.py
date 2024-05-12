@@ -9,9 +9,12 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     for idx, w in enumerate(text):
         if (w == "." or w == "?" or w == ":"):
+            print(w, end="")
             print()
-        elif text[idx] == " " and (text[idx - 1] == "." or text[idx - 1] == "?"\
-                or text[idx - 1] == ":"):
             print()
+        elif text[idx] == " "\
+            and (text[idx - 1] == "." or text[idx - 1] == "?"\
+            or text[idx - 1] == ":"):
+            pass
         else:
             print(text[idx], end="")

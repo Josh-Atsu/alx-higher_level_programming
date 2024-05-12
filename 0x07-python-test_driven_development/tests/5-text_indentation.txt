@@ -5,13 +5,13 @@ Importing from 5-text_indentation
 Test Success:
 >>> text_indentation.__doc__
 'Prints the text until it encounters . ? : and allow 2 new lines'
->>> text = "Great. Hopeful: Suffering?"
+>>> text = "Great. Hopeful: School"
 >>> text_indentation(text)
-Great
+Great.
 <BLANKLINE>
-Hopeful
+Hopeful:
 <BLANKLINE>
-Suffering
+School
 >>> text_indentation("We are awesome")
 We are awesome
 
