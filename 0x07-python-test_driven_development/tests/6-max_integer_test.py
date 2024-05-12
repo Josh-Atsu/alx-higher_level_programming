@@ -12,8 +12,10 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_integer(self):
         max1 = max_integer([1, 2, 3, 4])
         max2 = max_integer([1, 9, 4, 3])
+        max3 = max_integer([50, 9, 2, 7])
         self.assertEqual(max1, 4)
         self.assertEqual(max2, 9)
+        self.assertEqual(max3, 50)
 
     def test_negative(self):
         max2 = max_integer([1, -9, 4, 3])
@@ -26,6 +28,8 @@ class TestMaxInteger(unittest.TestCase):
         self.assertIsNotNone(max)
         max_n = max_integer()
         self.assertIsNone(max_n)
+        max_1 = max_integer([3])
+        self.assertEqual(max_1, 3)
 
 if __name__ == '__main__':
     unittest.main()
