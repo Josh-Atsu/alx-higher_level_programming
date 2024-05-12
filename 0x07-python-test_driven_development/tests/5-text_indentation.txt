@@ -1,0 +1,23 @@
+Importing from 5-text_indentation
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test Success:
+>>> text_indentation.__doc__
+'Prints the text until it encounters . ? : and allow 2 new lines'
+>>> text = "Great. Hopeful: Suffering?"
+>>> text_indentation(text)
+Great
+<BLANKLINE>
+Hopeful
+<BLANKLINE>
+Suffering
+>>> text_indentation("We are awesome")
+We are awesome
+
+
+Test Failure:
+>>> text_indentation(9)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
