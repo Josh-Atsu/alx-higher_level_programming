@@ -23,7 +23,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_exist(self):
         max = max_integer([2])
-        self.assertIs(max)
+        self.assertIsNotNone(max)
         max_n = max_integer()
         self.assertIsNone(max_n)
 
