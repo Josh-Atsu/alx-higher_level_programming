@@ -16,6 +16,6 @@ def matrix_divided(matrix, div):
         inner_array = []
         for i in array:
             num = i / div
-            inner_array.append(num)
+            inner_array.append(round(num, 2))
         my_array.append(inner_array)
     return my_array
