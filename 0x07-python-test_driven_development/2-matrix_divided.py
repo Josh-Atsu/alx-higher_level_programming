@@ -2,6 +2,7 @@
 # A function that divides the elemens of a matrix
 """Divides Element Of a matrix"""
 
+
 def matrix_divided(matrix, div):
     """Divides element of a matrix
     args:
