@@ -1,0 +1,17 @@
+Importing the add_integer module
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test Success
+>>> matrix_divided.__doc__
+'Divides element of a matrix\n    args:\n      matrix: list representation containing integers or float\n      div: number to be divided by'
+>>> matrix = [[2, 3, 6], [1, 4, 5]]
+>>> matrix_divided(matrix, 2)
+[[1.0, 1.5, 3.0], [0.5, 2.0, 2.5]]
+>>> matrix = [[2, 3, 6], [1, 4, 5]]
+>>> div = "2"
+>>> matrix_divided(matrix, div)
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
