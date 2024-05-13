@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A class and a subclass"""
+"""This class inherits from list and prints in ascending order"""
 
 
 class MyList(list):
