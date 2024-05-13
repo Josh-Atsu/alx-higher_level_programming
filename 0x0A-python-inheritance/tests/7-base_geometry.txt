@@ -1,0 +1,25 @@
+Importing from 7-basegeometry;
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test Success:
+>>> bg = BaseGeometry()
+>>> bg.__doc__
+'The Parentclass'
+>>> bg.area.__doc__
+'The area raises exception because its it not defined'
+>>> bg.integer_validator.__doc__
+'Validates the arguments passed: value'
+>>> bg.integer_validator("int_", 29)
+>>> bg.integer_validator("width", -2)
+Traceback (most recent call last):
+...
+ValueError: width must be greater than 0
+>>> bg.integer_validator("number", "67")
+Traceback (most recent call last):
+...
+TypeError: number must be an integer
+>>> bg.integer_validator("int", 0)
+Traceback (most recent call last):
+...
+ValueError: int must be greater than 0
