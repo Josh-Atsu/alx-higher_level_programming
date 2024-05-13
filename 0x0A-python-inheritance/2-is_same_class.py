@@ -5,6 +5,8 @@ if the object is exactly an instance of the specified class
 
 
 def is_same_class(obj, a_class):
+    """The function checks using isinstance method
+    and returns true or false"""
     if isinstance(obj, a_class):
         return True
     else:
