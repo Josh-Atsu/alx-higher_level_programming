@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 1-write_file.py
-"""Defines a file writing into a file"""
+"""Defines a file writing into a file."""
 
 
 def write_file(filename="", text=""):
