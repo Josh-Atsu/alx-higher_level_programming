@@ -4,3 +4,5 @@ __pycache__
 *.swo
 *_t
 *.txt
+*.json
+
