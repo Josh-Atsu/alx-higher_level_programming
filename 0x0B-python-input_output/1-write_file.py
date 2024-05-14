@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# a function that writes a string to a text file (UTF8)
 """ a function that writes a string to a text file (UTF8)"""
 
 
