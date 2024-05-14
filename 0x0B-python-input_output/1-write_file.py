@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 # 1-write_file.py
-"""Defines a function writing into a file."""
+"""Defines a function for writing"""
 
 
 def write_file(filename="", text=""):
     """
     writes a string to a text file (UTF8)
     and returns the number of characters written
+
     Args:
      filename: file to write into
      text: contains the string to write
