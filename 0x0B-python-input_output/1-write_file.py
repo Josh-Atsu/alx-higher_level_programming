@@ -11,7 +11,5 @@ def write_file(filename="", text=""):
      filename: file to write into
      text: contains the string to write
      """
-
     with open(filename, "w" encoding="utf-8") as myfile:
-        CharNum = myfile.write(text)
-        return CharNum
+        return myfile.write(text)
