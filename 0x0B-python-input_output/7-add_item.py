@@ -8,14 +8,15 @@ and then save them to a file:"""
 import sys, json
 
 
+if __name__ == "__main__":
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-
-
-py_list = []
-for i in sys.argv:
-    my_list = load_from_json_file(i)
-    py_list.append(my_list)
-with open(add_item.json, "a", encoding="utf-8") as myfile:
-    save_to_json_file(myfile, py_list)
+    try:
+        py_list = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        py_list = []
+    arguments = sys.argv[1:]
+    for args in arguments:
+        py_list.append(args)
+    save_to_json_file(py_list, "add_item.json")
