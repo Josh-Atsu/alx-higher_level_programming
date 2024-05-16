@@ -13,19 +13,19 @@ class Square(Rectangle):
     @property
     def size(self):
         """Getter property and get attributes"""
-        return self.size
+        return self.width
 
     @size.setter
     def size(self, value):
         """Set values"""
         if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+            raise TypeError("width must be an integer")
         if value <= 0:
-            raise ValueError("size be must > 0")
-        self.size = value
+            raise ValueError("width be must > 0")
+        self.width = value
 
     def __str__(self):
         """Overload __str__ and
         return [Square] (<id>) <x>/<y> - <size>"""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
-                                                 self.height)
+                                                 self.width)
