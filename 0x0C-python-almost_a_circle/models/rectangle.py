@@ -104,7 +104,7 @@ class Rectangle(Base):
             self.__width = args[1]
             self.__height = args[2]
             self.__x = args[3]
-        elif len(args) == 4:
+        elif len(args) == 5:
             self.id = args[0]
             self.__width = args[1]
             self.__height = args[2]
