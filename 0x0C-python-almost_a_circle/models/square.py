@@ -13,7 +13,7 @@ class Square(Rectangle):
     @property
     def size(self):
         """Getter property and get attributes"""
-        return self.__size
+        return self.size
 
     @size.setter
     def size(self, value):
@@ -22,7 +22,7 @@ class Square(Rectangle):
             raise TypeError("size must be an integer")
         if value <= 0:
             raise ValueError("size be must > 0")
-        self.__size = value
+        self.size = value
 
     def __str__(self):
         """Overload __str__ and
