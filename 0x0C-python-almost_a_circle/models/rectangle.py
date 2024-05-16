@@ -124,6 +124,10 @@ class Rectangle(Base):
                 elif key == "id":
                     self.id = value
 
+    def to_dictionary(self):
+        """Convert to dictionary"""
+        return self.__dict__
+
     def __str__(self):
         """Overide the __str__ method by returning
         [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
