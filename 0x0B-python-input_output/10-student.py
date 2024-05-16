@@ -22,5 +22,5 @@ class Student:
             elif name == "last_name":
                 new_dict["last_name"] = self.last_name
             elif name == "age":
-                new_dict["age:"] = self.age
+                new_dict["age"] = self.age
         return new_dict
