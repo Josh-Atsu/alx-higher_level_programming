@@ -85,4 +85,4 @@ class Rectangle(Base):
         """Overide the __str__ method by returning
         [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format\
-(self.id, self.__x, self.__y, self.__width, self.__height)
+    (self.id, self.__x, self.__y, self.__width, self.__height)
