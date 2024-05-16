@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Childclass that inherits from Baseclass"""
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -11,7 +12,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        super().__init__id = id
+        super().__init__(id)
 
     @property
     def width(self):
