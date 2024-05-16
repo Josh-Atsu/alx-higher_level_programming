@@ -88,6 +88,19 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
+    def update(self, *args):
+        """assigns an argument to each attribute"""
+        if args[0]:
+            self.id = args[0]
+        if args[1]:
+            self.__width = args[1]
+        if args[2]:
+            self.__height = args[2]
+        if args[3]:
+            self.__x = args[3]
+        if args[4]:
+            self.__y = args[4]
+
     def __str__(self):
         """Overide the __str__ method by returning
         [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
