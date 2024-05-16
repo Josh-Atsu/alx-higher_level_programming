@@ -24,6 +24,38 @@ class Square(Rectangle):
             raise ValueError("width must be > 0")
         self.width = value
 
+    def update(self, *args, **kwargs):
+        """assigns an argument to each attribute"""
+        if len(args) == 1:
+            self.id = args[0]
+        elif len(args) == 2:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[1]
+        elif len(args) == 3:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[1]
+            self.x = args[2]
+        elif len(args) == 4:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[1]
+            self.x = args[2]
+            self.y = args[3]
+        if len(args) == 0:
+            """Perform kwargs"""
+            for key, value in kwargs.items():
+                if key == "size":
+                    self.width = value
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
+                elif key == "id":
+                    self.id = value
+
     def __str__(self):
         """Overload __str__ and
         return [Square] (<id>) <x>/<y> - <size>"""
