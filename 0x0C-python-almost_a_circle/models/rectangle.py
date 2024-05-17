@@ -126,7 +126,13 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Convert to dictionary"""
-        return self.__dict__
+        new_dict = {}
+        new_dict.update({"x": self.__x,
+                         "y": self.__y,
+                         "id": self.id,
+                         "height": self.__height,
+                         "width": self.__width})
+        return new_dict
 
     def __str__(self):
         """Overide the __str__ method by returning
