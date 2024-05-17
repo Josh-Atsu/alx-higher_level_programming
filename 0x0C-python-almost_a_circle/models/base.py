@@ -32,5 +32,5 @@ class Base:
                 new_list = dict_n.to_dictionary()
                 my_list.append(new_list)
         j_string = Base.to_json_string(my_list)
-        with open("filename", "w", encoding="utf-8") as my_file:
+        with open(filename, "w", encoding="utf-8") as my_file:
             json.dump(j_string, my_file)
