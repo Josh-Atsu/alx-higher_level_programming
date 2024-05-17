@@ -34,3 +34,10 @@ class Base:
         j_string = Base.to_json_string(my_list)
         with open(filename, "w", encoding="utf-8") as my_file:
             my_file.write(j_string)
+
+    def from_json_string(json_string):
+        """that returns the list of the JSON string
+        representation json_string"""
+        if json_string i None or json_string == []:
+            return []
+        return json.loads(json_string)
