@@ -56,6 +56,15 @@ class Square(Rectangle):
                 elif key == "id":
                     self.id = value
 
+    def to_dictionary(self):
+        """Return a dictionary representation of the instance"""
+        square_dict = {}
+        square_dict["id"] = self.id
+        square_dict["x"] = self.x
+        square_dict["size"] = self.width
+        square_dict["y"] = self.y
+        return square_dict
+
     def __str__(self):
         """Overload __str__ and
         return [Square] (<id>) <x>/<y> - <size>"""
