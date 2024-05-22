@@ -1,3 +1,3 @@
 -- list all the tables of a database
-USE mysql
-SHOW TABLES
+SET @db_name = '%db_name%';
+SHOW TABLES;
