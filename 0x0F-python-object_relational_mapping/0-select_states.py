@@ -2,6 +2,7 @@
 import MySQLdb
 import sys
 
+
 if __name__ == "__main__":
     #connecting to mysql-db
     db = MySQLdb.connect(host="localhost", user=sys.argv[1], passwd="", db=sys.argv[3])
