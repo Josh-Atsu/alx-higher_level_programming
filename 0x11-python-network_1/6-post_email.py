@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """POST to email"""
 import requests
 from sys import argv
