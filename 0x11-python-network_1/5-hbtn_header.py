@@ -14,5 +14,6 @@ def main():
     head = res.headers
     print(head.get('x-request-id'))
 
+
 if __name__ == "__main__":
     main()
