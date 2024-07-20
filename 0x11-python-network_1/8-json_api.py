@@ -19,10 +19,10 @@ def main():
     try:
         r = response.json()
         if bool(r) is False:
-            print("No results")
+            print("No result")
         else:
             print("[{}] {}".format(r['id'], r['name']))
-    except:
+    except Exception as e:
         print("Not a valid JSON")
 
 
