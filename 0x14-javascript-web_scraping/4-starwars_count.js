@@ -10,7 +10,7 @@ request(url, (err, response, body) => {
     const filmData = JSON.parse(body).results;
     let count = 0;
     for (const filmIndex in filmData) {
-      const filmChar = filmData[filmIndex].charaters;
+      const filmChar = filmData[filmIndex].characters;
       for (const charIndex in filmChar) {
         if (filmChar[charIndex].includes('18')) {
           count++;
