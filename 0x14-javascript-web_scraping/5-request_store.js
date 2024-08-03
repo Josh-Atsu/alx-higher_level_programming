@@ -11,10 +11,10 @@ request(url, (err, response, body) => {
   } else if (response.statusCode === 200) {
     fs.writeFile(file, body, 'utf-8', (err) => {
       if (err) {
-        console.log(err)
+        console.log(err);
       }
     });
   } else {
-    console.log('An Error occured. Status Code: ' + response.statusCode)
+    console.log('An Error occured. Status Code: ' + response.statusCode);
   }
 });
